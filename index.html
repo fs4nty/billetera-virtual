@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1 class="titulo">Billetera Digital</h1>
+    <br>
+    <div id="saldo"></div>
+    <form>
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" required>
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+            <option value="">Seleccione</option>
+            <option value="deposito">deposito</option>
+            <option value="retiro">retiro</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" onclick="transaccion()">Realizar transaccion</button>
+        <br>
+        <br>
+    </form>
+    <div class="tabla">
+    <h2>Historial</h2><p>Fecha | Tipo | Monto</p>
+    <table>
+        <thead>
+            <br>
+            <tr>
+                <th></th> 
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+    </div>
+        <tbody id="historial">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
